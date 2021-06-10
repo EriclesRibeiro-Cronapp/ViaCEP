@@ -1,10 +1,12 @@
 # Introdução
 
 Esta é uma aplicação criada com o CronApp IDE.
+Utilizada como projeto de integração à plataforma com inclusão de uma API
 
 ## Pré-Requisitos
 
 1. CronApp IDE
+2. Documentação [ViaCEP](https://viacep.com.br)
 
 ## Como rodar com o CronApp
 
