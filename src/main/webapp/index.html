@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="node_modules/cronapp-framework-js/dist/css/app.css"> 
   <link rel="stylesheet" href="node_modules/angular-ui-notification/dist/angular-ui-notification.min.css"> 
   <link id="themeSytleSheet" rel="stylesheet" href="node_modules/cronapp-framework-js/css/themes/material.min.css"> 
-  <script src="js/customModules.js"></script> 
+  <script src="js/customModules.js"></script>
+   
   <link rel="stylesheet" href="css/app.css"> 
   <title ng-bind="$root.viewTitle">ViaCEP</title> 
   <script src="js/customStateProvider.js"></script> 
@@ -89,6 +90,18 @@
   <script src="node_modules/cronapp-lib-js/dist/js/kendo-ui/js/cultures/kendo.culture.pt-BR.min.js"></script> 
   <script src="node_modules/cronapp-lib-js/dist/js/kendo-ui/js/jszip.min.js"></script> 
   <script src="node_modules/cronapp-lib-js/dist/js/kendo-ui/js/timezones/kendo.timezones.min.js"></script> 
-  <script src="node_modules/ui-select/dist/select.min.js"></script>  
+  <script src="node_modules/ui-select/dist/select.min.js"></script> 
+  <script src="js/blockly/modal_function.cronapi.js"></script> 
+  <script src="js/blockly/teste.cronapi.js"></script> 
+  <div id="overlay">
+<div class="spinner"></div> 
+</div> 
+<script>
+var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+})
+</script>
  </body>
 </html>

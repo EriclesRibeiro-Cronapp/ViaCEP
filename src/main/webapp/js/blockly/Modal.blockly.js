@@ -27,7 +27,7 @@ window.blockly.js.blockly.Modal.fecharModal = async function() {
 window.blockly.js.blockly.Modal.abrirModalArgs = [];
 window.blockly.js.blockly.Modal.abrirModal = async function() {
 
-  this.cronapi.screen.showModal("modal64724");
+  this.cronapi.myfunctions.abrirModalPerfil("modal64724");
 }
 
 /**
@@ -36,5 +36,4 @@ window.blockly.js.blockly.Modal.abrirModal = async function() {
 window.blockly.js.blockly.Modal.abrirModalPerfilArgs = [];
 window.blockly.js.blockly.Modal.abrirModalPerfil = async function() {
 
-  this.cronapi.screen.showModal("modal22182");
 }

@@ -1,3 +1,4 @@
+
 <style title="local" class="col-md-12">
 #crn-text-component-418960 { 
   font-family: Tahoma, Geneva, sans-serif;
@@ -52,37 +53,42 @@ div#main-nav-bar .navbar-default .navbar-nav > li > a:hover:focus {
     </div> 
   </nav> 
 </div><div ui-view="" id="main-view" tabindex="-1" role="main" class="container-fluid main-view main-view-vertical col-md-12" style="background-color: #282630; height: 100%; position: fixed; margin-top: 0px; border: 0px none rgb(0, 0, 0); box-shadow: none; margin-left: 10px; width: 80%;"> 
-  
+
   <h1>Bem vindo ao ViaCEP</h1>
   <p id="p-info"><b>ViaCEP</b> - Sistema de busca informações por CEP e  armazenar contatos cadastrados por usuário, gerando uma exibição com cards dos contatos salvos.</p>
-  <div class="container">
-      <div class="row">
-          <div class="card">
-              <div class="card-header">
-                  <h2>API</h2>
-              </div>
-              <div class="card-body">
-                  <p>A API utilizada foi a <b>ViaCEP</b>. Ao fazer as buscas por CEP, ela mostra informações como logradouro, complemento, bairro, localidade, UF e outros.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Flexbox</h2>
-              </div>
-              <div class="card-body">
-                  <p>O modelo de layout utilizado foi o <b>Flexbox</b>. Utilizado nos cards da página Home e Contatos. Em contatos, junto com <b>ng-repeat</b> vários cars com os contatos salvos são gerados e exibidos.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Consulta</h2>
-              </div>
-              <div class="card-body">
-                  <p>Apesar das dificuldades, a consulta no banco foi gerada. Através dos blocos <b>Servidor</b> (Consulta dos dados) e <b>Cliente</b> (Exibição dos dados). </p>
-              </div>
-          </div>
-  </div>
-</div><div class="modal fade" id="modalPassword"> 
+
+    <div class="row">
+        <div class="card">
+            <div class="card__inner">
+                <div class="card_face card_face_front">
+                    <h2>Developer Card</h2>
+                </div>
+                <div class="card_face card_face_back">
+                    <div class="card_content">
+                        <div class="card_header">
+                            <h2>JavaScript</h2>
+                        </div>
+                        <div class="card_body">
+                            <h3>JavaScript Card - Flip</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Recusandae animi rem nam quibusdam inventore consectetur doloremque! 
+                                Iste, ducimus tempora. Omnis corrupti pariatur quo facilis voluptas autem nostrum esse? Repudiandae, recusandae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script>
+        var cardEffect = document.querySelector('.card__inner')
+        cardEffect.addEventListener('click', function(){
+        cardEffect.classList.toggle('is-flipped')
+        })
+    </script>
+
+</div>
+
+<div class="modal fade" id="modalPassword"> 
   <div class="modal-dialog"> 
     <div class="modal-content"> 
       <div class="modal-header"> 
@@ -114,6 +120,8 @@ div#main-nav-bar .navbar-default .navbar-nav > li > a:hover:focus {
         <button class="btn btn-primary btn-fab k-button" type="submit" ng-click="changePassword()" ng-disabled="form.$invalid || vm.dataLoading" aria-label="{{'Save' | translate}}"><span class="k-icon k-i-check"></span></button> 
         <button class="btn btn-default btn-fab k-button" type="button" data-dismiss="modal" aria-label="{{'Home.view.Close' | translate}}"><span class="k-icon k-i-close"></span></button> 
       </div> 
+          
     </div> 
+
   </div> 
 </div></div>

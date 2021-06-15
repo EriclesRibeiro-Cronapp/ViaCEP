@@ -36,21 +36,21 @@ public class ListaEndereco implements Serializable {
     /**
     * @generated
     */
-    @Column(name = "cidade", nullable = false, unique = false, insertable=true, updatable=true)
+    @Column(name = "nome", nullable = false, unique = false, insertable=true, updatable=true)
         
-        private java.lang.String cidade;
+        private java.lang.String nome;
 
     /**
     * @generated
     */
-    @Column(name = "endereco", nullable = false, unique = false, insertable=true, updatable=true)
+    @Column(name = "telefone", nullable = false, unique = false, insertable=true, updatable=true)
         
-        private java.lang.String endereco;
+        private java.lang.String telefone;
 
     /**
     * @generated
     */
-    @Column(name = "bairro", nullable = false, unique = false, insertable=true, updatable=true)
+    @Column(name = "bairro", nullable = true, unique = false, insertable=true, updatable=true)
         
         private java.lang.String bairro;
 
@@ -64,24 +64,16 @@ public class ListaEndereco implements Serializable {
     /**
     * @generated
     */
-    @Column(name = "nome", nullable = false, unique = false, insertable=true, updatable=true)
+    @Column(name = "cidade", nullable = true, unique = false, insertable=true, updatable=true)
         
-        private java.lang.String nome;
+        private java.lang.String cidade;
 
     /**
     * @generated
     */
-    @Column(name = "telefone", nullable = true, unique = false, insertable=true, updatable=true)
+    @Column(name = "endereco", nullable = true, unique = false, insertable=true, updatable=true)
         
-        private java.lang.String telefone;
-
-    /**
-    * @generated
-    */
-    @ManyToOne
-    @JoinColumn(name="fk_user", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
-        
-        private User user;
+        private java.lang.String endereco;
 
     /**
     * Construtor
@@ -107,82 +99,6 @@ public class ListaEndereco implements Serializable {
     */
     public ListaEndereco setId(java.lang.String id){
         this.id = id;
-        return this;
-    }
-    /**
-    * Obtém cidade
-    * return cidade
-    * @generated
-    */
-    
-    public java.lang.String getCidade(){
-        return this.cidade;
-    }
-
-    /**
-    * Define cidade
-    * @param cidade cidade
-    * @generated
-    */
-    public ListaEndereco setCidade(java.lang.String cidade){
-        this.cidade = cidade;
-        return this;
-    }
-    /**
-    * Obtém endereco
-    * return endereco
-    * @generated
-    */
-    
-    public java.lang.String getEndereco(){
-        return this.endereco;
-    }
-
-    /**
-    * Define endereco
-    * @param endereco endereco
-    * @generated
-    */
-    public ListaEndereco setEndereco(java.lang.String endereco){
-        this.endereco = endereco;
-        return this;
-    }
-    /**
-    * Obtém bairro
-    * return bairro
-    * @generated
-    */
-    
-    public java.lang.String getBairro(){
-        return this.bairro;
-    }
-
-    /**
-    * Define bairro
-    * @param bairro bairro
-    * @generated
-    */
-    public ListaEndereco setBairro(java.lang.String bairro){
-        this.bairro = bairro;
-        return this;
-    }
-    /**
-    * Obtém estado
-    * return estado
-    * @generated
-    */
-    
-    public java.lang.String getEstado(){
-        return this.estado;
-    }
-
-    /**
-    * Define estado
-    * @param estado estado
-    * @generated
-    */
-    public ListaEndereco setEstado(java.lang.String estado){
-        this.estado = estado;
         return this;
     }
     /**
@@ -224,22 +140,79 @@ public class ListaEndereco implements Serializable {
         return this;
     }
     /**
-    * Obtém user
-    * return user
+    * Obtém bairro
+    * return bairro
     * @generated
     */
     
-    public User getUser(){
-        return this.user;
+    public java.lang.String getBairro(){
+        return this.bairro;
     }
 
     /**
-    * Define user
-    * @param user user
+    * Define bairro
+    * @param bairro bairro
     * @generated
     */
-    public ListaEndereco setUser(User user){
-        this.user = user;
+    public ListaEndereco setBairro(java.lang.String bairro){
+        this.bairro = bairro;
+        return this;
+    }
+    /**
+    * Obtém estado
+    * return estado
+    * @generated
+    */
+    
+    public java.lang.String getEstado(){
+        return this.estado;
+    }
+
+    /**
+    * Define estado
+    * @param estado estado
+    * @generated
+    */
+    public ListaEndereco setEstado(java.lang.String estado){
+        this.estado = estado;
+        return this;
+    }
+    /**
+    * Obtém cidade
+    * return cidade
+    * @generated
+    */
+    
+    public java.lang.String getCidade(){
+        return this.cidade;
+    }
+
+    /**
+    * Define cidade
+    * @param cidade cidade
+    * @generated
+    */
+    public ListaEndereco setCidade(java.lang.String cidade){
+        this.cidade = cidade;
+        return this;
+    }
+    /**
+    * Obtém endereco
+    * return endereco
+    * @generated
+    */
+    
+    public java.lang.String getEndereco(){
+        return this.endereco;
+    }
+
+    /**
+    * Define endereco
+    * @param endereco endereco
+    * @generated
+    */
+    public ListaEndereco setEndereco(java.lang.String endereco){
+        this.endereco = endereco;
         return this;
     }
 

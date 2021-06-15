@@ -12,7 +12,7 @@
       "namespace": "app",
       "position": {
         "x": 0,
-        "y": 113.93783569335938
+        "y": 113.95111846923828
       },
       "queries": [],
       "restPath": "/api/rest",
@@ -51,7 +51,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 72.890625,
+          "ref-x": 71.828125,
           "text": "Texto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -150,8 +150,8 @@
       "modelType": "Table",
       "name": "Application",
       "position": {
-        "x": 542,
-        "y": 60.004512786865234
+        "x": 762.453125,
+        "y": 60.00450134277344
       },
       "queries": [],
       "realName": "",
@@ -159,8 +159,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 107.88541793823242,
-        "width": 117.84375
+        "height": 105.89323043823242,
+        "width": 119.015625
       },
       "tableName": "APPLICATION",
       "tableScheme": null,
@@ -190,7 +190,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 87.109375,
+          "ref-x": 90.484375,
           "text": "Texto\nApplication\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -322,8 +322,8 @@
       "modelType": "Table",
       "name": "ApplicationUser",
       "position": {
-        "x": 1020.25,
-        "y": 648.7532348632812
+        "x": 1145.3828125,
+        "y": 648.8062133789062
       },
       "queries": [],
       "realName": "",
@@ -331,8 +331,8 @@
       "role": "AssociationClass",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 118.68933868408203,
-        "width": 159.5625
+        "height": 116.69715118408203,
+        "width": 165.1875
       },
       "tableName": "APPLICATION_USER",
       "tableScheme": null,
@@ -370,7 +370,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 103.40625,
+          "ref-x": 106.796875,
           "text": "Inteiro\nTexto\nTexto\nData e Hora com Fuso\nTexto Longo\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -746,8 +746,8 @@
       "modelType": "Table",
       "name": "AuditLog",
       "position": {
-        "x": 256,
-        "y": 36
+        "x": 480,
+        "y": 0
       },
       "queries": [],
       "realName": "",
@@ -760,8 +760,8 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 227.89442443847656,
-        "width": 232.640625
+        "height": 225.90223693847656,
+        "width": 238.34375
       },
       "tableName": "AUDIT_LOG",
       "type": "uml.Class",
@@ -792,7 +792,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 112.03125,
+          "ref-x": 114.3125,
           "text": "Texto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -1012,8 +1012,8 @@
       "multitenantContextJsonIgnore": "false",
       "name": "Device",
       "position": {
-        "x": 50.00000762939453,
-        "y": 32.837833404541016
+        "x": 929.796875,
+        "y": 32.83783721923828
       },
       "queries": [],
       "restPath": "",
@@ -1021,8 +1021,8 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 162.21875,
-        "width": 156.984375
+        "height": 160.2265625,
+        "width": 161.5
       },
       "tableName": "DEVICE",
       "tableScheme": null,
@@ -1033,34 +1033,30 @@
       "angle": 0,
       "attributes": [
         "id:java.lang.String",
-        "cidade:java.lang.String",
-        "endereco:java.lang.String",
-        "bairro:java.lang.String",
-        "estado:java.lang.String",
         "nome:java.lang.String",
         "telefone:java.lang.String",
-        "user:User"
+        "bairro:java.lang.String",
+        "estado:java.lang.String",
+        "cidade:java.lang.String",
+        "endereco:java.lang.String"
       ],
       "attrs": {
-        ".": {
-          "display": "normal"
-        },
         ".uml-class-attrs-rect": {
-          "height": 190,
+          "height": 170,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "id\ncidade\nendereco\nbairro\nestado\nnome\ntelefone\nuser\n"
+          "text": "id\nnome\ntelefone\nbairro\nestado\ncidade\nendereco\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 89.125,
-          "text": "Texto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nUser\n"
+          "ref-x": 89.203125,
+          "text": "Texto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,240)"
+          "transform": "translate(0,220)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -1098,130 +1094,6 @@
           "isUniqueKey": false,
           "isNullable": false,
           "pkType": "UUID",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
-          "name": "cidade",
-          "type": "java.lang.String",
-          "dbName": "cidade",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Cidade",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": false,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
-          "name": "endereco",
-          "type": "java.lang.String",
-          "dbName": "endereco",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Endereco",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": false,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
-          "name": "bairro",
-          "type": "java.lang.String",
-          "dbName": "bairro",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Bairro",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": false,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
-          "name": "estado",
-          "type": "java.lang.String",
-          "dbName": "estado",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Estado",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
           "multitenantContext": "",
           "jsonIgnore": false,
           "isTransient": false,
@@ -1282,6 +1154,37 @@
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "bairro",
+          "type": "java.lang.String",
+          "dbName": "bairro",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Bairro",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
           "isNullable": true,
           "pkType": "",
           "multitenantContext": "",
@@ -1302,14 +1205,76 @@
           "foreignKeyName": ""
         },
         {
-          "name": "user",
-          "type": "User",
-          "dbName": "fk_user",
+          "name": "estado",
+          "type": "java.lang.String",
+          "dbName": "estado",
           "dbLength": "",
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
-          "label": "User",
+          "label": "Estado",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "cidade",
+          "type": "java.lang.String",
+          "dbName": "cidade",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Cidade",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "endereco",
+          "type": "java.lang.String",
+          "dbName": "endereco",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Endereco",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -1334,14 +1299,14 @@
         }
       ],
       "generateView": "Auto",
-      "id": "4eed191a-bf99-477d-87a9-60dbc61db500",
+      "id": "1739f786-d7c3-4867-973f-40e1d92c3197",
       "isRest": "true",
       "methods": [],
       "modelType": "Table",
       "name": "ListaEndereco",
       "position": {
-        "x": 1106,
-        "y": 80.0000228881836
+        "x": 1326,
+        "y": 158
       },
       "queries": [],
       "realName": "",
@@ -1349,13 +1314,13 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 173.1446762084961,
-        "width": 134.078125
+        "height": 163.0546875,
+        "width": 134.71875
       },
-      "tableName": "LISTAENDERECO",
+      "tableName": "",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 24
+      "z": 28
     },
     {
       "angle": 0,
@@ -1380,7 +1345,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 139.609375,
+          "ref-x": 143.046875,
           "text": "Texto\nTexto\nTexto\nTexto\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -1590,8 +1555,8 @@
         "user"
       ],
       "position": {
-        "x": 1231.25,
-        "y": 637.8932495117188
+        "x": 1353.8046875,
+        "y": 637.9462890625
       },
       "primaryKeys": [
         "id"
@@ -1614,8 +1579,8 @@
         ""
       ],
       "size": {
-        "height": 140.4092254638672,
-        "width": 184.5625
+        "height": 138.4170379638672,
+        "width": 190.234375
       },
       "tableName": "LOGIN",
       "type": "uml.Class",
@@ -1646,7 +1611,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 135.34375,
+          "ref-x": 138.78125,
           "text": "Texto\nLógico\nLógico\nTexto\nTexto\nApplication\n"
         },
         ".uml-class-methods-rect": {
@@ -1917,8 +1882,8 @@
         "normalizedName"
       ],
       "position": {
-        "x": 137.75,
-        "y": 338.1099853515625
+        "x": 230.51171875,
+        "y": 338.13653564453125
       },
       "primaryKeys": [
         "id"
@@ -1941,8 +1906,8 @@
         ""
       ],
       "size": {
-        "height": 151.30570220947266,
-        "width": 207.796875
+        "height": 149.31351470947266,
+        "width": 213.484375
       },
       "tableName": "ROLE",
       "type": "uml.Class",
@@ -1972,7 +1937,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 82.203125,
+          "ref-x": 85.578125,
           "text": "Texto\nRole\nSecurable\n"
         },
         ".uml-class-methods-rect": {
@@ -2123,8 +2088,8 @@
         "securable"
       ],
       "position": {
-        "x": 215.5,
-        "y": 648.7532348632812
+        "x": 347.5625,
+        "y": 648.8062133789062
       },
       "primaryKeys": [
         "id"
@@ -2145,8 +2110,8 @@
         ""
       ],
       "size": {
-        "height": 118.68933868408203,
-        "width": 150.375
+        "height": 116.69715118408203,
+        "width": 156
       },
       "tableName": "ROLE_SECURABLE",
       "type": "uml.Class",
@@ -2174,7 +2139,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 87.109375,
+          "ref-x": 90.484375,
           "text": "Texto\nTexto\nApplication\n"
         },
         ".uml-class-methods-rect": {
@@ -2345,8 +2310,8 @@
         "type"
       ],
       "position": {
-        "x": 447.25,
-        "y": 354.41815185546875
+        "x": 575.953125,
+        "y": 354.4447326660156
       },
       "primaryKeys": [
         "id"
@@ -2368,8 +2333,8 @@
         ""
       ],
       "size": {
-        "height": 118.68933868408203,
-        "width": 159.5625
+        "height": 116.69715118408203,
+        "width": 165.1875
       },
       "tableName": "SECURABLE",
       "type": "uml.Class",
@@ -2411,7 +2376,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 156.015625,
+          "ref-x": 156.6875,
           "text": "Texto\nInteiro\nTexto\nLógico\nLógico\nData e Hora\nTexto\nTexto\nTexto\nTexto\nTexto\nLógico\nTexto\nLógico\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -3075,8 +3040,8 @@
         "userName"
       ],
       "position": {
-        "x": 642,
-        "y": 444
+        "x": 864.375,
+        "y": 277.9022216796875
       },
       "primaryKeys": [
         "id"
@@ -3109,8 +3074,8 @@
         ""
       ],
       "size": {
-        "height": 271.77430725097656,
-        "width": 233.953125
+        "height": 272.61024475097656,
+        "width": 235.21875
       },
       "tableName": "USER",
       "type": "uml.Class",
@@ -3140,7 +3105,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 58.703125,
+          "ref-x": 59.75,
           "text": "Texto\nRole\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -3291,8 +3256,8 @@
         "user"
       ],
       "position": {
-        "x": 59.50001525878906,
-        "y": 648.7532348632812
+        "x": 193.546875,
+        "y": 648.8062133789062
       },
       "primaryKeys": [
         "id"
@@ -3313,8 +3278,8 @@
         ""
       ],
       "size": {
-        "height": 118.68933868408203,
-        "width": 103.65625
+        "height": 116.69715118408203,
+        "width": 106.9375
       },
       "tableName": "USER_ROLE",
       "type": "uml.Class",
@@ -3344,7 +3309,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 82.203125,
+          "ref-x": 85.578125,
           "text": "Texto\nSecurable\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -3495,8 +3460,8 @@
         "user"
       ],
       "position": {
-        "x": 816.2501220703125,
-        "y": 648.7532348632812
+        "x": 946.1328125,
+        "y": 648.8062133789062
       },
       "primaryKeys": [
         "id"
@@ -3517,8 +3482,8 @@
         ""
       ],
       "size": {
-        "height": 118.68933868408203,
-        "width": 150.375
+        "height": 116.69715118408203,
+        "width": 156
       },
       "tableName": "USER_SECURABLE",
       "type": "uml.Class",
@@ -3555,7 +3520,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 146.265625,
+          "ref-x": 148.578125,
           "text": "Texto\nSecurable\nTexto\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\nLógico\nApplication\n"
         },
         ".uml-class-methods-rect": {
@@ -3964,8 +3929,8 @@
       "modelType": "Table",
       "name": "View",
       "position": {
-        "x": 509.7501220703125,
-        "y": 599.6312255859375
+        "x": 618.51171875,
+        "y": 599.684326171875
       },
       "queries": [],
       "realName": "",
@@ -3973,61 +3938,13 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 216.93304443359375,
-        "width": 218.71875
+        "height": 214.94085693359375,
+        "width": 223.28125
       },
       "tableName": "VIEW",
       "tableScheme": null,
       "type": "uml.Class",
       "z": 15
-    },
-    {
-      "associationType": "Association",
-      "attrs": {
-        ".": {
-          "display": "normal"
-        },
-        ".marker-source": {
-          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
-          "fill": "#cecece"
-        },
-        ".marker-target": {
-          "d": "",
-          "fill": ""
-        }
-      },
-      "id": "0cba9450-0f1d-491a-bb33-6be5f3bb9d78",
-      "labels": [
-        {
-          "position": 0.9,
-          "attrs": {
-            "rect": {
-              "fill": "transparent"
-            },
-            "text": {
-              "text": "*",
-              "font-family": "Arial",
-              "font-size": "12px",
-              "fill": "#cecece"
-            }
-          }
-        }
-      ],
-      "name": null,
-      "queries": [],
-      "relationFields": [
-        "user:target"
-      ],
-      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
-      "source": {
-        "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
-      },
-      "target": {
-        "id": "4eed191a-bf99-477d-87a9-60dbc61db500"
-      },
-      "type": "uml.Composition",
-      "vertices": [],
-      "z": 25
     },
     {
       "associationType": "Association",
@@ -4677,8 +4594,8 @@
         "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
         "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
         "55beab5c-2393-4e53-879f-87138492feb1",
-        "4eed191a-bf99-477d-87a9-60dbc61db500",
         "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
+        "1739f786-d7c3-4867-973f-40e1d92c3197",
         "b194a533-61d6-4661-b9da-ff80ce2835f9",
         "d92238a3-a37d-4cc6-a543-d0687dc207cd",
         "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
