@@ -1,4 +1,3 @@
-
 <style title="local" class="col-md-12">
 #crn-text-component-418960 { 
   font-family: Tahoma, Geneva, sans-serif;
@@ -16,22 +15,32 @@
 
 
 div#main-nav-bar .navbar-default .navbar-nav > li > a:hover { 
-  background-color: rgb(30, 28, 36);
+  background-color: rgb(18, 93, 152);
+  color: rgb(255, 255, 255);
 }
 
 div#main-nav-bar .navbar-default .navbar-nav > li > a:hover:focus { 
-  background-color: rgb(30, 28, 36);
+  background-color: rgb(18, 93, 152);
+  color: rgb(255, 255, 255);
+}
+
+div#main-nav-bar .navbar-default .navbar-nav > li > a { 
+  color: rgb(18, 93, 152);
+}
+
+div#main-nav-bar .dropdown-menu { 
+  color: rgb(18, 93, 152);
 }
 </style><div class="component-holder ng-binding ng-scope crn-navigator-vertical col-md-1" data-component="crn-navbar" id="main-nav-bar" tabindex="-1" xattr-class="crn-navigator-vertical" style="position: static;"> 
-  <nav class="navbar navbar-default" style="background-color: rgb(255, 212, 84); height: 100vh;"> 
+  <nav class="navbar navbar-default" style=""> 
     <ul aria-label="{{'DirectAccess' | translate}}" class="main-access" tabindex="-1"> 
       <li><a crn-anchor="main-view" href="javascript:void(0);" class="main-nav-link" alt="{{'MainContent' | translate}}">{{'MainContent' | translate}}</a> </li> 
       <li><a crn-anchor="main-nav-bar" href="javascript:void(0);" class="main-nav-link" alt="{{'MainMenu' | translate}}">{{'MainMenu' | translate}}</a> </li> 
     </ul> 
-    <div class="container-fluid" style="background-color: rgb(40, 38, 48);"> 
+    <div class="container-fluid" style=""> 
       <div class="navbar-header"> 
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar, #navbar2" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-        <a class="component-holder ng-binding ng-scope navbar-brand" data-component="crn-image" ng-click="cronapi.screen.changeView('#/home', [])"> <img alt="{{'Home.view.Home' | translate}}" src="https://i.ibb.co/4NNcFBw/Sem-T-tulo-1.png" style="width: 160px; margin-top: -26px; height: 73px; position: static;" id="crn-navbar-logo" data-component="crn-image"> </a> 
+         
       </div> 
       <div id="navbar" class="navbar-collapse collapse float-left-desktop"> 
         <ul class="nav navbar-nav" style="float:none"> 
@@ -52,7 +61,7 @@ div#main-nav-bar .navbar-default .navbar-nav > li > a:hover:focus {
       </div> 
     </div> 
   </nav> 
-</div><div ui-view="" id="main-view" tabindex="-1" role="main" class="container-fluid main-view main-view-vertical col-md-12" style="background-color: #282630; height: 100%; position: fixed; margin-top: 0px; border: 0px none rgb(0, 0, 0); box-shadow: none; margin-left: 10px; width: 80%;"> 
+</div><div ui-view="" id="main-view" tabindex="-1" role="main" class="container-fluid main-view main-view-vertical col-md-12" style=" height: 100%;width: 80%; position: fixed; margin-top: 0px; margin-bottom: 0px; border: 0px none rgb(0, 0, 0); box-shadow: none;"> 
 
   <h1>Bem vindo ao ViaCEP</h1>
   <p id="p-info"><b>ViaCEP</b> - Sistema de busca informações por CEP e  armazenar contatos cadastrados por usuário, gerando uma exibição com cards dos contatos salvos.</p>
