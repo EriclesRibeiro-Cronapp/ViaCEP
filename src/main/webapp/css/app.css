@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;700;900&family=Oxygen&display=swap');
 
+div#main-nav-bar .navbar-default .navbar-nav > li > a:visited { 
+  background-color: rgb(230, 229, 229);
+}
 :root{
     /* Variáveis de texto */
     --title-font:'Fira Sans', sans-serif;
@@ -25,11 +28,11 @@ body {
   font-family: var(--p-font);
   width: 100%;
   height: 100%;
-  /* Não permite selecionar 
+  /* Não permite selecionar */
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
     -ms-user-select: none;
-    user-select: none;*/
+    user-select: none;
 }
 div#main-view{
     background-color: #F6F6F6;
@@ -187,19 +190,21 @@ p{
     color:black;
 }
 
+
 /* Cartões de contato */
 .container_grid { 
-    padding: 3em;
+    overflow-Y: visible;
+    padding: 2em;
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     align-items: center;
   }
  .card_contato{
     width: 250px;
     background: radial-gradient(circle, rgba(89,148,195,1) 14%, rgba(42,110,163,1) 99%);
     transition: transform 1s;
-    height: 230px;
+    height: 250px;
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
@@ -223,7 +228,8 @@ p{
  }
  .card_contato_header h2{
      color: #F6F6F6;
-     font-size: 5em;
+     font-size: 3em;
+     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
  }
  .card_contato_body{
      margin-top: 20px;
@@ -243,10 +249,11 @@ p{
  .bairro_footer{
      font-family: var(--title-font);
      font-weight: 900;
-     opacity: 0.3;
+     opacity: 0.4;
  }
  .bairro_footer p{
-     font-size: 40px;
-     color: #F6F6F6;
+     font-size: 2.5em;
+     color: #fff;
+     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
  }
 

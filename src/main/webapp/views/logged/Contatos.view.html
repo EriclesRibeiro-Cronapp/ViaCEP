@@ -16,30 +16,29 @@ div#crn-button-6221 button {
 #crn-button-6221 { 
   background-color: rgb(40, 38, 48);
 }
-</style><div class="content_all" style="overflow: scroll; overflow-x: hidden;"><div class="component-holder ng-scope" data-component="crn-button" id="crn-button-636256" style="width: 100px; height: 40px; float: right; margin-right: 10px;">
+</style>
+<div class="content_all" style="overflow: scroll; overflow-x: hidden;"><div class="component-holder ng-scope" data-component="crn-button" id="crn-button-636256" style="width: 100px; height: 40px; float: right; margin-right: 10px;">
   <button class="btn k-button btn-block btn-default" ng-click="cronapi.client('js.blockly.Modal.abrirModal').names().run()" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled=""><i class=""></i> <span>Adicionar</span></button>
-</div><h1 class="text-center title component-holder" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-1086296" ng-init="cronapi.client('js.blockly.Consulta.consulta').names().run()" style="margin-left: 100px;">Contatos</h1>
+</div><h1 class="text-center title component-holder" xattr-position="h1 text-center" xattr-type="h1" data-component="crn-text-component" id="crn-text-component-1086296" ng-init="cronapi.client('js.blockly.Consulta.consulta').names().run()" style="margin-left: 100px; font-size: 5em;">Contatos</h1>
 
 
-<div class="container_grid">
-
-            <div class="card_contato" ng-repeat="endereco in vars.listaEndereco" ng-model="vars.listaEndereco">
-                <div class="content_card">
+    <div class="container_grid">
+        <div class="card_contato" ng-repeat="endereco in vars.listaEndereco | orderBy: 'nome'" ng-model="vars.listaEndereco">
+            <div class="content_card">
                 <div class="card_contato_header">
                     <h2>{{endereco.nome}}</h2>
                 </div>
                 <div class="card_contato_body">
                     <p>{{endereco.telefone}}</p>
-                    <p><b>{{endereco.bairro}}</b></p>
+                    <p><strong>{{endereco.bairro}}</strong></p>
                     <div class="bairro_footer">
-                    <p style="">{{endereco.estado}}</p>
+                        <p style="">{{endereco.estado}}</p>
                     </div>
-                    </div>
-               
-                
-            
-</div>
-        </div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
         </div><div class="modal fade" id="modal64724"> 
   <div class="modal-dialog"> 
     <div class="modal-content" ng-model="vars.contatoPerfil"> 
